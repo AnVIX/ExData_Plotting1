@@ -56,7 +56,7 @@ dataset$Date.Time <- parse_date_time(dataset$Date.Time,orders="%d/%m/%Y %H:%M:%S
 
 ## Step4: generate & save Plot4 as 'plot4.png' with 480 width X 480 height pixels 
 dev.copy(png, file = "plot4.png",width=480, height=480)
-par(mfcol = c(2,2), bg = "transparent", cex.axis = 0.86, cex.lab = 0.86)
+par(mfcol = c(2,2), cex.axis = 0.86, cex.lab = 0.86)
 
 # plot (1,1)
 plot(x = dataset$Date.Time, y = dataset$Global_active_power, 

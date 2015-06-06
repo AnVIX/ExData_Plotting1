@@ -50,7 +50,7 @@ dataset$Date.Time <- parse_date_time(dataset$Date.Time,orders="%d/%m/%Y %H:%M:%S
 
 ## Step4: generate & save Plot2 as 'plot2.png' with 480 width X 480 height pixels. 
 par.defaults <- par(no.readonly=TRUE)
-par(bg = "transparent", cex.axis = 0.86, cex.lab = 0.86)
+par(cex.axis = 0.86, cex.lab = 0.86)
 
 plot(x = dataset$Date.Time, y = dataset$Global_active_power, 
          xlab = "", ylab = "Global Active Power (kilowatts)", type="l")

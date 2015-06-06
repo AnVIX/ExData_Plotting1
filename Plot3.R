@@ -50,7 +50,7 @@ dataset$Date.Time <- parse_date_time(dataset$Date.Time,orders="%d/%m/%Y %H:%M:%S
 
 ## Step4: generate & save Plot3 as 'plot3.png' with 480 width X 480 height pixels 
 par.defaults <- par(no.readonly = TRUE)
-par(bg = "transparent", cex.axis = 0.86, cex.lab = 0.86)
+par(cex.axis = 0.86, cex.lab = 0.86)
 
 dev.copy(png, file = "plot3.png", width = 480, height = 480)
 

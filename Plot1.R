@@ -43,7 +43,7 @@ dataset <- read.csv.sql(dataFile,
 
 ## Step3: generate & save Plot1 histogram as 'plot1.png' with 480 width X 480 height pixels. 
 par.defaults <- par(no.readonly = TRUE)
-par(bg = "transparent", cex.axis = 0.86, cex.lab = 0.86, cex.main = 0.86)
+par(cex.axis = 0.86, cex.lab = 0.86, cex.main = 0.86)
 
 hist(dataset$Global_active_power, col = "red", main = "Global Active Power", 
                                  xlab = "Global Active Power (kilowatts)")
